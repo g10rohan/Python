@@ -1,10 +1,7 @@
-# Write a Python program to remove duplicates from a list.
-mylist=[]
-mylist1=[]
-n=int(input("Enter number of element you want to insert:-"))
-for i in range(0,n):
-    mylist.append(int(input("enter value:")));
-for i in mylist:
-    if i not in mylist1:
-        mylist1.append(i);
-print(mylist1)
+# # 17. Write a Python program to remove duplicates from Dictionary.
+d1={1:1,2:2,3:3,4:4,5:4,6:4}
+d2={}
+for k,v in d1.items():
+    if v not in d2.values():
+        d2[k]=v;
+print(d2);
